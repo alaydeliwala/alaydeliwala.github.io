@@ -1,2 +1,0 @@
-# alaydeliwala.github.io
-deployment
