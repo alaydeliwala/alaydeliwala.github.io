@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genius on codex</title>
+    <link>https://alaydeliwala.github.io/tags/genius/</link>
+    <description>Recent content in genius on codex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Alay Deliwala © {year}</copyright>
+    <lastBuildDate>Thu, 04 Jun 2020 09:19:29 -0400</lastBuildDate>
+    
+	<atom:link href="https://alaydeliwala.github.io/tags/genius/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Genius Repetition Visualizer</title>
+      <link>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</link>
+      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

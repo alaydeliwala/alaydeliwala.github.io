@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on codex</title>
+    <link>https://alaydeliwala.github.io/tags/math/</link>
+    <description>Recent content in math on codex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Alay Deliwala © {year}</copyright>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://alaydeliwala.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Album Popularity Predictor</title>
+      <link>https://alaydeliwala.github.io/projects/album-popularity-predictor/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/album-popularity-predictor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://alaydeliwala.github.io/blog/math-typesetting/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/blog/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
