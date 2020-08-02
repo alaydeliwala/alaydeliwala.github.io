@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Alay Deliwala © {year}</copyright>
-    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alaydeliwala.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,44 +18,18 @@
       <pubDate>Wed, 29 Jul 2020 15:51:08 -0400</pubDate>
       
       <guid>https://alaydeliwala.github.io/graphics/</guid>
-      <description></description>
+      <description> ⚠️ Coming Soon ⚠️  </description>
     </item>
     
     <item>
       <title>About Me</title>
       <link>https://alaydeliwala.github.io/about-me/</link>
-      <pubDate>Wed, 29 Jul 2020 15:38:51 -0400</pubDate>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alaydeliwala.github.io/about-me/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://alaydeliwala.github.io/blog/math-typesetting/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/blog/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://alaydeliwala.github.io/blog/rich-text/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/blog/rich-text/</guid>
-      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Instagram Simple Shortcode .__h_instagram.card { font-family: -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif; font-size: 14px; border: 1px solid rgb(219, 219, 219); padding: 0; margin-top: 30px; } .__h_instagram.card .card-header, .__h_instagram.card .card-body { padding: 10px 10px 10px; } .__h_instagram.card img { width: 100%; height: auto; }  koloot.</description>
-    </item>
-    
-    <item>
-      <title>Welcome To Codex</title>
-      <link>https://alaydeliwala.github.io/blog/example-post/</link>
-      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/blog/example-post/</guid>
-      <description>The standard Lorem Ipsum passage &amp;ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <description>Hi! My name is Alay Deliwala and I am a software engineer at Salesforce. I recently graduated from NC State University where I majored in computer science. Go Wolfpack!
+I have a passion for tackling tough problems head-on and taking any opportunity to learn something new! I am interested in cloud computing, machine learning, and automation.
+I also work as a freelance graphic designer, video editor for organizations, small business, and nonprofits.</description>
     </item>
     
     <item>
