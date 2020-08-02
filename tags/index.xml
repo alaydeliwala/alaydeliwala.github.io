@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on codex</title>
+    <title>Tags on alay deliwala</title>
     <link>https://alaydeliwala.github.io/tags/</link>
-    <description>Recent content in Tags on codex</description>
+    <description>Recent content in Tags on alay deliwala</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Alay Deliwala © {year}</copyright>
@@ -31,24 +31,6 @@
     </item>
     
     <item>
-      <title>data science</title>
-      <link>https://alaydeliwala.github.io/tags/data-science/</link>
-      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/tags/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>genius</title>
-      <link>https://alaydeliwala.github.io/tags/genius/</link>
-      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/tags/genius/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hugo</title>
       <link>https://alaydeliwala.github.io/tags/hugo/</link>
       <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
@@ -58,11 +40,74 @@
     </item>
     
     <item>
+      <title>bot</title>
+      <link>https://alaydeliwala.github.io/tags/bot/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/tags/bot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>python</title>
       <link>https://alaydeliwala.github.io/tags/python/</link>
-      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alaydeliwala.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI</title>
+      <link>https://alaydeliwala.github.io/tags/ai/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://alaydeliwala.github.io/tags/ml/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://alaydeliwala.github.io/tags/data-science/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genius</title>
+      <link>https://alaydeliwala.github.io/tags/genius/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/tags/genius/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://alaydeliwala.github.io/tags/ios/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react-native</title>
+      <link>https://alaydeliwala.github.io/tags/react-native/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/tags/react-native/</guid>
       <description></description>
     </item>
     

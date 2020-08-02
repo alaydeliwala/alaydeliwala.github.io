@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on codex</title>
+    <title>Projects on alay deliwala</title>
     <link>https://alaydeliwala.github.io/projects/</link>
-    <description>Recent content in Projects on codex</description>
+    <description>Recent content in Projects on alay deliwala</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Alay Deliwala © {year}</copyright>
-    <lastBuildDate>Wed, 29 Jul 2020 12:27:39 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alaydeliwala.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Drop Cop Bot</title>
       <link>https://alaydeliwala.github.io/projects/drop-cop-bot/</link>
-      <pubDate>Wed, 29 Jul 2020 12:27:39 -0400</pubDate>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alaydeliwala.github.io/projects/drop-cop-bot/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Album Popularity Predictor</title>
       <link>https://alaydeliwala.github.io/projects/album-popularity-predictor/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://alaydeliwala.github.io/projects/album-popularity-predictor/</guid>
       <description></description>
@@ -33,9 +33,18 @@
     <item>
       <title>Genius Repetition Visualizer</title>
       <link>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</link>
-      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RPS</title>
+      <link>https://alaydeliwala.github.io/projects/rps/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/rps/</guid>
       <description></description>
     </item>
     

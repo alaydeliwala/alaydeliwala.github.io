@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>codex</title>
+    <title>alay deliwala</title>
     <link>https://alaydeliwala.github.io/</link>
-    <description>Recent content on codex</description>
+    <description>Recent content on alay deliwala</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Alay Deliwala © {year}</copyright>
-    <lastBuildDate>Wed, 29 Jul 2020 12:27:39 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alaydeliwala.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,24 +31,6 @@
     </item>
     
     <item>
-      <title>Drop Cop Bot</title>
-      <link>https://alaydeliwala.github.io/projects/drop-cop-bot/</link>
-      <pubDate>Wed, 29 Jul 2020 12:27:39 -0400</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/projects/drop-cop-bot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Album Popularity Predictor</title>
-      <link>https://alaydeliwala.github.io/projects/album-popularity-predictor/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/projects/album-popularity-predictor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Math Typesetting</title>
       <link>https://alaydeliwala.github.io/blog/math-typesetting/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
@@ -68,21 +50,48 @@ Instagram Simple Shortcode .__h_instagram.card { font-family: -apple-system,Blin
     </item>
     
     <item>
-      <title>Genius Repetition Visualizer</title>
-      <link>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</link>
-      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Welcome To Codex</title>
       <link>https://alaydeliwala.github.io/blog/example-post/</link>
       <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
       
       <guid>https://alaydeliwala.github.io/blog/example-post/</guid>
       <description>The standard Lorem Ipsum passage &amp;ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Drop Cop Bot</title>
+      <link>https://alaydeliwala.github.io/projects/drop-cop-bot/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/drop-cop-bot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Album Popularity Predictor</title>
+      <link>https://alaydeliwala.github.io/projects/album-popularity-predictor/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/album-popularity-predictor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genius Repetition Visualizer</title>
+      <link>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/genius-repetition-visualizer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RPS</title>
+      <link>https://alaydeliwala.github.io/projects/rps/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/rps/</guid>
+      <description></description>
     </item>
     
   </channel>

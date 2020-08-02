@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on alay deliwala</title>
+    <link>https://alaydeliwala.github.io/tags/ai/</link>
+    <description>Recent content in AI on alay deliwala</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Alay Deliwala © {year}</copyright>
+    <lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://alaydeliwala.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Album Popularity Predictor</title>
+      <link>https://alaydeliwala.github.io/projects/album-popularity-predictor/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/projects/album-popularity-predictor/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
