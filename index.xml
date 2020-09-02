@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Alay Deliwala © {year}</copyright>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2020 01:32:34 -0400</lastBuildDate>
     
 	<atom:link href="https://alaydeliwala.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://alaydeliwala.github.io/blog/welcome/</link>
+      <pubDate>Wed, 02 Sep 2020 01:32:34 -0400</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/blog/welcome/</guid>
+      <description>Hi! Thanks for visiting my site. I am super excited to get started. Stay Tuned</description>
+    </item>
     
     <item>
       <title>Graphics</title>
@@ -19,17 +28,6 @@
       
       <guid>https://alaydeliwala.github.io/graphics/</guid>
       <description> ⚠️ Coming Soon ⚠️  </description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://alaydeliwala.github.io/about-me/</link>
-      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/about-me/</guid>
-      <description>Hi! My name is Alay Deliwala and I am a software engineer at Salesforce. I recently graduated from NC State University where I majored in computer science. Go Wolfpack!
-I have a passion for tackling tough problems head-on and taking any opportunity to learn something new! I am interested in cloud computing, machine learning, and automation.
-I also work as a freelance graphic designer, video editor for organizations, small business, and nonprofits.</description>
     </item>
     
     <item>
