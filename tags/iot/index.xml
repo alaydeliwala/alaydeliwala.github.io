@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on alay deliwala</title>
-    <link>https://alaydeliwala.github.io/blog/</link>
-    <description>Recent content in Blogs on alay deliwala</description>
+    <title>iot on alay deliwala</title>
+    <link>https://alaydeliwala.github.io/tags/iot/</link>
+    <description>Recent content in iot on alay deliwala</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Alay Deliwala © {year}</copyright>
     <lastBuildDate>Fri, 11 Sep 2020 23:32:55 -0400</lastBuildDate>
     
-	<atom:link href="https://alaydeliwala.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alaydeliwala.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>https://alaydeliwala.github.io/blog/airplay-w-raspi/</guid>
       <description>Overview This tutorial will primarily involve you installing software that will allow your raspberry pi to serve as an AirPlay receiver on your local network. The software we will be using is an open source project - Shairport Sync
 Shairport Sync turns your Raspberry Pi into an AirPlay receiver by implementing Apple&amp;rsquo;s proprietary protocols. You can play audio from any AirPlay enabled device through your Raspberry Pi. This means you can turn any ordinary speaker into a smart speaker, WOW!</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>https://alaydeliwala.github.io/blog/welcome/</link>
-      <pubDate>Wed, 02 Sep 2020 01:32:34 -0400</pubDate>
-      
-      <guid>https://alaydeliwala.github.io/blog/welcome/</guid>
-      <description>Hi! Thanks for visiting my site. I am super excited to get started. Stay Tuned</description>
     </item>
     
   </channel>

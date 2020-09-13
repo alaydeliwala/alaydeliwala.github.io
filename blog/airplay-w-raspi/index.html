@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Using a Raspberry Pi as an AirPlay Receiver | alay deliwala</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Old Speakers &#43; Raspberry Pi = Smart Speakers">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.7764ee45e64c97197f4727dd41a3797d5bcc64435e881c175ca274347b795c93.css" integrity="sha256-d2TuReZMlxl/RyfdQaN5fVvMZENeiBwXXKJ0NHt5XJM="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/alaydeliwala.github.io\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Using a Raspberry Pi as an AirPlay Receiver",
+      "headline" : "Using a Raspberry Pi as an AirPlay Receiver",
+      "description" : "Old Speakers \u002b Raspberry Pi = Smart Speakers",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-09-11 23:32:55 -0400 EDT",
+      "dateModified" : "2020-09-11 23:32:55 -0400 EDT",
+      "url" : "https:\/\/alaydeliwala.github.io\/blog\/airplay-w-raspi\/",
+      "wordCount" : "882",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+      <li>
+        <a  href="/about-me">about me</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/projects">projects</a>
+      </li>
+    
+      <li>
+        <a  href="/graphics">graphics</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Using a Raspberry Pi as an AirPlay Receiver</h1>
+            <time datetime="2020-09-11 23:32:55 -0400 EDT" class="post__date"
+            >Sep 11 2020</time>
+          </header>
+          <article class="post__content">
+              
+<h2 id="overview">Overview<a class="anchor" href="#overview">#</a></h2>
+<p>This tutorial will primarily involve you installing software that will allow your raspberry pi to serve as an AirPlay receiver on your local network.
+The software we will be using is an open source project - <a href="https://github.com/mikebrady/shairport-sync">Shairport Sync</a></p>
+<p>Shairport Sync turns your Raspberry Pi into an AirPlay receiver by implementing Apple&rsquo;s proprietary protocols.
+You can play audio from any AirPlay enabled device through your Raspberry Pi.
+This means you can turn any ordinary speaker into a smart speaker, WOW!</p>
+<p align="center">
+    <img src="/img/airplay-w-pi.png" width="275" />
+</p>
+<p><em>This guide will only set up an AirPlay <strong>audio</strong> receiver.</em></p>
+<h2 id="prerequisites">Prerequisites<a class="anchor" href="#prerequisites">#</a></h2>
+<ul>
+<li>1 x Raspberry Pi w/ Raspbian installed <a href="https://projects.raspberrypi.org/en/projects/noobs-install">(Instructions to install Raspbian via NOOBS)</a></li>
+<li>Speakers (connected via 3.5 mm jack or HDMI)</li>
+<li>AirPlay enabled device (iPhone, iPad, Mac&hellip;)</li>
+</ul>
+<p>No special equipment is needed for this project. We will be leveraging the <a href="https://github.com/mikebrady/shairport-sync"><code>Shairport-Sync</code></a> project to do most of the heavy lifting.</p>
+<h2 id="installation">Installation<a class="anchor" href="#installation">#</a></h2>
+<h3 id="1-update-apt-get">1. Update <code>apt-get</code><a class="anchor" href="#1-update-apt-get">#</a></h3>
+<p>Let&rsquo;s start by making sure our package manager is up-to-date. Run the following commands in your terminal to update and upgrade <code>apt-get</code>.</p>
+<pre><code class="language-shell">sudo apt-get update
+sudo apt-get upgrade
+</code></pre>
+<p>Everything is up-to-date, amazing!</p>
+<h3 id="2-install-all-necessary-packages">2. Install all necessary packages<a class="anchor" href="#2-install-all-necessary-packages">#</a></h3>
+<p><code>Shairport-Sync</code> requires several packages to run, use the following command to install them all.</p>
+<pre><code class="language-shell">sudo apt-get install autoconf automake avahi-daemon build-essential git libasound2-dev libavahi-client-dev libconfig-dev libdaemon-dev libpopt-dev libssl-dev libtool xmltoman
+</code></pre>
+<h3 id="3-clone-the-shairport-sync-repository">3. Clone the <code>Shairport-Sync</code> repository<a class="anchor" href="#3-clone-the-shairport-sync-repository">#</a></h3>
+<p>Run the following command to clone the <code>Shairport-Sync</code> repository. Make sure to run the following commands in your root folder.</p>
+<pre><code class="language-shell"># Navigate to your root folder
+cd ~
+git clone https://github.com/mikebrady/shairport-sync.git
+</code></pre>
+<p>For more information about <code>Shairport-Sync</code>, visit their <a href="https://github.com/mikebrady/shairport-sync">repository here</a></p>
+<h3 id="4-configure-shairport-sync">4. Configure <code>Shairport-Sync</code><a class="anchor" href="#4-configure-shairport-sync">#</a></h3>
+<p>Now that we have installed <code>Shairport-Sync</code> successfully we must first configure it before we can build &amp; run it. Switch into the <code>Shairport-Sync</code> project using the command below.</p>
+<pre><code class="language-shell">cd shairport-sync/
+</code></pre>
+<p>Run the two commands below to configure <code>Shairport-Sync</code>.</p>
+<pre><code class="language-shell">autoreconf -i -f
+./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --with-metadata
+</code></pre>
+<p>The first command <code>autoreconf</code> produces a configuration script that will be used by the next command.</p>
+<p>The second command configures <code>Shairport-Sync</code> using some parameters. Here is a brief explanation.</p>
+<ul>
+<li><code>--with-alsa</code> enables support for Advanced Linux Sound Architecture (ALSA)</li>
+<li><code>--with-avahi</code> enables support for Avahi, a system-wide zero-configuration (zeroconf) networking service</li>
+<li><code>--with-ssl</code> enables OpenSSL encryption</li>
+<li><code>--with-systemd</code> allows<code>Shairport-Sync</code> to be launched on boot</li>
+<li><code>--with-metadata</code> enables piping of metadata to compatible applications</li>
+</ul>
+<p>There are many more options with you can use to configure <code>Shairport-Sync</code>. Detailed descriptions and additional parameters can be found on the Shairport-Sync GitHub page.</p>
+<h3 id="4-making--installing-shairport-sync">4. Making &amp; Installing <code>Shairport-Sync</code><a class="anchor" href="#4-making--installing-shairport-sync">#</a></h3>
+<p>Now that we have configured <code>Shairport-Sync</code> properly, we need to run the commands below to build and install the application.
+The following commands will do numerous things that including the autostart script.</p>
+<pre><code class="language-shell">make
+sudo make install
+</code></pre>
+<p>Now we have <code>Shairport-Sync</code> successfully running</p>
+<h3 id="optional-5-configure-shairport-sync-to-start-on-boot">[Optional] 5. Configure <code>Shairport-Sync</code> to start on boot<a class="anchor" href="#optional-5-configure-shairport-sync-to-start-on-boot">#</a></h3>
+<p>Earlier we configured <code>Shairport-Sync</code> to work with systemd (<code>--with-systemd</code>)</p>
+<pre><code>sudo systemctl enable shairport-sync
+</code></pre>
+<p>Start the <code>Shairport-Sync</code> service</p>
+<pre><code>sudo service shairport-sync start
+</code></pre>
+<p>You can check the status of <code>Shairport-Sync</code> using the command below</p>
+<pre><code>sudo systemctl status shairport-sync.service
+</code></pre>
+<h2 id="improving-raspberry-pi-airplay-receiver-wi-fi-performance">Improving Raspberry Pi Airplay Receiver Wi-Fi Performance<a class="anchor" href="#improving-raspberry-pi-airplay-receiver-wi-fi-performance">#</a></h2>
+<p>To improve the Wi-Fi performance of your AirPlay receiver we need to edit the Raspberry Pi&rsquo;s WLAN adaptor power management.
+By default, to conserve power, the Raspberry Pi will power down the Wi-Fi adaptor when it is not in use.
+Since we want to make sure that our AirPlay receiver is always available, we will need to disable the power down.</p>
+<p><em>Note: Editing <code>/etc/network/interfaces</code> no longer works with Raspbian. The instructions below are the updated way.</em></p>
+<p>Use the following command to get the current wlan0 <code>power_save</code> state</p>
+<pre><code>/sbin/iw wlan0 get power_save
+</code></pre>
+<p>Use the following command to disable the <code>power_save</code> state</p>
+<pre><code>sudo /sbin/iw wlan0 set power_save off
+</code></pre>
+<p>Since the <code>iw</code> command is not persistent, we will need to make some changes. Add the following line to <code>/etc/rc.local</code> right before the <code>exit 0</code> to have it set at startup.</p>
+<pre><code class="language-shell">/sbin/iw wlan0 set power_save off
+</code></pre>
+<p>Checkout the following post for more about disabling <code>power_save</code> state - <a href="https://raspberrypi.stackexchange.com/questions/47087/raspberry-pi-3-wifi-goes-to-sleep">Disabling power_save</a></p>
+<h2 id="additional-improvements">Additional Improvements<a class="anchor" href="#additional-improvements">#</a></h2>
+<h3 id="improve-audio-quality-using-a-usb-dac">Improve Audio Quality Using a USB DAC<a class="anchor" href="#improve-audio-quality-using-a-usb-dac">#</a></h3>
+<p>Depending on the speakers you are using, you may want to ditch the device&rsquo;s built-in headphone jack.
+While this works fine with lower-end systems such and desktop speakers and soundbars, you will benefit from using a USB DAC if you have a Hi-Fi speaker setup.
+While the DAC you selected depends on your end goal, here is a list of DACs to use <a href="https://www.whathifi.com/us/best-buys/hi-fi/best-dacs">(List of DACs)</a>.</p>
+<p>To ensure that your DAC is being utilized you must make a few changes to <code>/etc/modprobe.d/alsa-base.conf</code>. Use the following command to open the file for editing.</p>
+<pre><code class="language-shell">sudo nano /etc/modprobe.d/alsa-base.conf
+</code></pre>
+<p>Make sure that your settings are as follows:</p>
+<pre><code class="language-shell"># sets the index value of the cards but doesn’t reorder.
+
+options snd_usb_audio index=0
+
+options snd_bcm2835 index=1
+
+# does the reordering.
+
+options snd slots=snd_usb_audio,snd_bcm2835
+</code></pre>
+<p>Save that, and now your Raspberry PI will default to using the DAC as your audio output device!</p>
+<h3 id="using-airplay-receiver-metadata">Using AirPlay Receiver Metadata<a class="anchor" href="#using-airplay-receiver-metadata">#</a></h3>
+<ul>
+<li>Check out the following article for more information - <a href="https://appcodelabs.com/show-artist-song-metadata-using-airplay-on-raspberry-pi">Using AirPlay Metadata</a></li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting<a class="anchor" href="#troubleshooting">#</a></h2>
+<p>Having Issues with you Audio? Check out the following issue!</p>
+<ul>
+<li><a href="https://github.com/mikebrady/shairport-sync/issues/741">https://github.com/mikebrady/shairport-sync/issues/741</a></li>
+</ul>
+<h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
+<p>You should now hopefully have a fully working Raspberry Pi AirPlay receiver. If you have any issues or feedback, then feel free to send me a message!
+If you enjoyed this tutorial, then be sure to check out my other projects and share my content. Thank you!</p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://alaydeliwala.github.io/tags/iot/">iot</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://alaydeliwala.github.io/tags/raspi/">raspi</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://alaydeliwala.github.io/blog/welcome/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Welcome</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:ahdeliwala@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://alaydeliwala.github.io/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/alaydeliwala"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://alaydeliwala.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/alay-deliwala-21876b129"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://alaydeliwala.github.io/svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Applemusic"
+         href="https://www.apple.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://alaydeliwala.github.io/svg/applemusic.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>Alay Deliwala © 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

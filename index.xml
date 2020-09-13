@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Alay Deliwala © {year}</copyright>
-    <lastBuildDate>Wed, 02 Sep 2020 01:32:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 23:32:55 -0400</lastBuildDate>
     
 	<atom:link href="https://alaydeliwala.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using a Raspberry Pi as an AirPlay Receiver</title>
+      <link>https://alaydeliwala.github.io/blog/airplay-w-raspi/</link>
+      <pubDate>Fri, 11 Sep 2020 23:32:55 -0400</pubDate>
+      
+      <guid>https://alaydeliwala.github.io/blog/airplay-w-raspi/</guid>
+      <description>Overview This tutorial will primarily involve you installing software that will allow your raspberry pi to serve as an AirPlay receiver on your local network. The software we will be using is an open source project - Shairport Sync
+Shairport Sync turns your Raspberry Pi into an AirPlay receiver by implementing Apple&amp;rsquo;s proprietary protocols. You can play audio from any AirPlay enabled device through your Raspberry Pi. This means you can turn any ordinary speaker into a smart speaker, WOW!</description>
+    </item>
     
     <item>
       <title>Welcome</title>
